@@ -30,9 +30,18 @@
     $email = get_field('email', 'option');
 ?>
 
+<!-- Preloader Start -->
+<div id="preloader">
+    <div class="loader">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+    </div>
+</div>
+<!-- Preloader End -->
+
 <div class="page-wrapper">
 
-    <header class="top-panel" role="banner">
+    <header class="top-panel animation-element" role="banner" data-anim="slide_top">
 
         <div class="container">
 

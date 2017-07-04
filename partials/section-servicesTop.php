@@ -16,7 +16,7 @@ if( empty($button_url) ){ $button_url = '#'; }
 ?>
 
 
-    <section class="section section--servicesTop">
+    <section class="section section--servicesTop animation-element" data-anim="slide_top">
 
         <div class="container">
 

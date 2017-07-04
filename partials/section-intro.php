@@ -16,7 +16,7 @@ if( have_rows('section_intro') ):
 
 ?>
 
-        <section class="section section--intro" style="background-image: url('<?= THEME_URL ?>/assets/img/intro-bg.png');">
+        <section class="section section--intro animation-element" data-anim="slide_top" style="background-image: url('<?= THEME_URL ?>/assets/img/intro-bg.png');">
 
             <div class="container">
 

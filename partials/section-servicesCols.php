@@ -2,7 +2,7 @@
     $count = 0;
 ?>
 
-    <section class="section section--servicesCols">
+    <section class="section section--servicesCols animation-element" data-anim="slide_top">
 
 
     <?php while ( have_posts() ) : the_post();

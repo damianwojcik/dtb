@@ -61,6 +61,8 @@ jQuery(document).ready(function () {
     init_isotope();
     initMap();
     colsEqualHeight();
+    scroll_based_animations();
+    loader();
 
     $wind.on('scroll',function(){
 
@@ -69,11 +71,51 @@ jQuery(document).ready(function () {
 
     });
 
+    function loader() {
+        jQuery(window).on('load', function() {
+            jQuery('body').addClass('loaded');
+        });
+    }
+
     lightbox.option({
         'resizeDuration': 300,
         'wrapAround': true,
         'fadeDuration': 300
     });
+
+    function scroll_based_animations() {
+
+        var $elements = jQuery('.animation-element'),
+            $window = jQuery(window);
+
+        function check_if_in_view(){
+
+            var window_height = $window.height(),
+                window_top_pos = $window.scrollTop(),
+                window_bottom_pos = (window_top_pos + window_height);
+
+            jQuery.each($elements, function(){
+
+                var $element = jQuery(this),
+                    element_height = $element.outerHeight(),
+                    element_top_pos = $element.offset().top,
+                    element_bottom_pos = (element_top_pos + element_height);
+
+                //check to see if this current container is within viewport
+                if ((element_top_pos <= window_bottom_pos) ){
+                    $element.addClass('in-view');
+                } else {
+                    $element.removeClass('in-view');
+                }
+
+            });
+
+        }
+
+        $window.on('scroll resize', check_if_in_view);
+        $window.trigger('scroll');
+
+    }
 
     function colsEqualHeight() {
 

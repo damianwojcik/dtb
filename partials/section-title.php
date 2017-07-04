@@ -13,7 +13,7 @@
 ?>
 
 
-<section class="section section--title" style="background-image: url('<?php echo $title_bg;?>');">
+<section class="section section--title animation-element" data-anim="slide_top" style="background-image: url('<?php echo $title_bg;?>');">
 
     <div class="wrap">
 

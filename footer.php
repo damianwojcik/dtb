@@ -1,6 +1,6 @@
 <?php $contactlink = get_permalink( get_page_by_title( 'Kontakt' ) ) ?>
 
-<footer class="site-footer" role="contentinfo">
+<footer class="site-footer animation-element" data-anim="slide_top" role="contentinfo">
 
     <div class="container">
 

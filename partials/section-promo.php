@@ -11,7 +11,7 @@
             $description = get_sub_field('description');
 ?>
 
-            <section class="section section--promo">
+            <section class="section section--promo animation-element" data-anim="slide_top">
 
                 <div class="container">
 

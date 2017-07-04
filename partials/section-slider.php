@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="section section--slider">
+<section class="section section--slider animation-element" data-anim="slide_top">
 
     <h1 class="offscreen">Slider</h1>
 

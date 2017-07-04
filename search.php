@@ -2,7 +2,7 @@
 
 <?php get_template_part("partials/section", "title"); ?>
 
-    <main class="content">
+    <main class="content animation-element" data-anim="slide_top">
 
         <div class="container">
 

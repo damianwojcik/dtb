@@ -13,7 +13,7 @@
 
 ?>
 
-            <section class="section section--projects" style="background-image: url('<?= THEME_URL ?>/assets/img/bg-projects.jpg')">
+            <section class="section section--projects animation-element" data-anim="slide_top" style="background-image: url('<?= THEME_URL ?>/assets/img/bg-projects.jpg')">
 
                 <div class="container">
 
