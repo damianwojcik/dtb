@@ -1,0 +1,80 @@
+/* BEGIN GALLERY */
+.gallery {
+  list-style-type: none;
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  a {
+    display: table;
+    width: 100%;
+  }
+
+  li {
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    @include phone-xl-min {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    img {
+      max-height: 220px;
+      display: block;
+      float: left;
+      width: 100%;
+
+      @include phone-l-min {
+        max-height: 320px;
+      }
+
+      @include phone-xl-min {
+        max-height: 220px;
+        width: auto;
+      }
+    }
+  }
+
+  .overlay {
+    background: linear-gradient(to right,#e947a5 0%,rgba(233,71,165,0.1) 100%);
+    opacity: 0;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+    padding: 25px;
+
+    &__title {
+      position: absolute;
+      left: 25px;
+      bottom: 25px;
+      margin-right: 100px;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: $white;
+      font-size: 22px;
+      font-weight: 600;
+      font-family: $montserrat;
+      line-height: 1.4;
+    }
+
+    .btn {
+      position: absolute;
+      right: 28px;
+      bottom: 28px;
+    }
+  }
+
+  li:hover {
+    .overlay {
+      transform: translate(0%, 0%);
+      opacity: 1;
+    }
+  }
+}
+/* END GALLERY */

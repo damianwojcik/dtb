@@ -1,0 +1,124 @@
+/* BEGIN GRADIENT-BOX */
+.gradient-box {
+  display: table;
+  margin: auto;
+  width: 100%;
+  background: $red; /* Old browsers */
+  background: -moz-linear-gradient(left, $red 0%, lighten($red, 10%) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, $red 0%, lighten($red, 10%) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, $red 0%, lighten($red, 10%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e31e25', endColorstr='#FD383F',GradientType=1 ); /* IE6-9 */
+  padding: 40px 30px;
+
+  @include phone-xl-min {
+    padding: 55px 30px 50px;
+  }
+
+  @include tablet-xl-min {
+    padding: 60px 40px 70px;
+  }
+
+  @include desktop-s-min {
+    padding: 60px 60px 70px;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+
+    @include phone-xl-min {
+      display: table;
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgba(255,255,255,0.15);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    transition: all 0.4s ease-in-out;
+
+
+    @include phone-xl-min {
+      display: inline-block;
+      width: calc(50% - 10px);
+      margin-bottom: 20px;
+
+      &:nth-last-child(-n+2) {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(odd) {
+        margin-right: 10px;
+      }
+
+      &:nth-child(even) {
+        margin-left: 10px;
+      }
+    }
+
+    @include tablet-xl-min {
+      width: calc(50% - 15px);
+      margin-bottom: 30px;
+
+      &:nth-last-child(-n+2) {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(odd) {
+        margin-right: 15px;
+      }
+
+      &:nth-child(even) {
+        margin-left: 15px;
+      }
+    }
+
+    @include desktop-m-min {
+      max-width: 200px;
+    }
+
+    &:hover {
+      background-color: rgba(255,255,255,0.3);
+
+      h3 {
+        color: $white;
+      }
+    }
+
+    a {
+      display: block;
+      text-align: center;
+
+      .flaticon {
+        color: $white;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+
+    h3 {
+      display: block;
+      max-width: 90%;
+      height: 16px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0 auto;
+      font-size: 12px;
+      font-family: $montserrat;
+      text-transform: uppercase;
+      line-height: 1.4;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: $white;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+}
+/* END GRADIENT-BOX */

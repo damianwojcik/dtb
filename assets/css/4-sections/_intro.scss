@@ -1,0 +1,75 @@
+/* BEGIN SECTION--INTRO */
+.section--intro {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include tablet-xl-min {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .col-6 {
+    width: 100%;
+
+    &:first-child {
+      margin-bottom: 50px;
+
+      @include tablet-xl-min {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 35px;
+
+    @include tablet-m-min {
+      margin-bottom: 40px;
+    }
+  }
+
+  .img-intro {
+    height: 200px;
+    width: 100%;
+    display: inline-block;
+
+    @include phone-l-min {
+      height: 310px;
+    }
+
+    @include tablet-m-min {
+      max-width: 80%;
+      height: 500px;
+    }
+
+    @include tablet-xl-min {
+      max-width: 100%;
+      height: 325px;
+    }
+
+    @include desktop-m-min {
+      height: 400px;
+    }
+  }
+
+  @include tablet-m-min {
+    .col-6:last-child {
+      text-align: center;
+    }
+  }
+
+  @include tablet-xl-min {
+    .col-6 {
+      display: block;
+      float: left;
+      width: 50%;
+
+      &:last-child {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+/* END SECTION--INTRO */

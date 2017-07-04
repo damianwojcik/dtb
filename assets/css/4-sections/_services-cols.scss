@@ -1,0 +1,19 @@
+/* BEGIN SERVICES-COLS */
+.section--servicesCols {
+  display: table;
+
+  .col-3 {
+    display: block;
+    width: 100%;
+
+    @include tablet-s-min {
+      width: 50%;
+      float: left;
+    }
+
+    @include tablet-xl-min {
+      width: 33.333%;
+    }
+  }
+}
+/* END SERVICES-COLS */

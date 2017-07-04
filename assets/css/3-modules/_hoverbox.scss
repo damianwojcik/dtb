@@ -1,0 +1,119 @@
+/* BEGIN HOVERBOX */
+.hoverbox {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 330px;
+
+  @include phone-m-min {
+    height: 400px;
+  }
+
+  @include phone-l-min {
+    height: 285px;
+  }
+
+  @include phone-xl-min {
+    height: 345px;
+  }
+
+  @include desktop-xl-min {
+    height: 400px;
+  }
+
+  &:hover {
+    .hoverbox__overlay {
+      background: linear-gradient(to right,#e31e25 0%,rgba(227,30,37,0.8) 100%);
+    }
+
+    .hoverbox__description {
+      max-height: 115px;
+
+      @include phone-m-min {
+        max-height: 195px;
+      }
+
+      @include phone-l-min {
+        max-height: 90px;
+      }
+
+      @include phone-xl-min {
+        max-height: 135px;
+      }
+
+      @include desktop-xl-min {
+        max-height: 230px;
+      }
+    }
+
+    .btn-circleoverlay {
+      background-color: $white;
+
+      .fa {
+        color: $red;
+      }
+    }
+  }
+
+  &__overlay {
+    background: linear-gradient(to right,#e31e25 0%,rgba(227,30,37,0.1) 100%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+    padding: 30px 25px;
+  }
+
+  &__inner {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    padding: 30px;
+
+    @include desktop-xl-min {
+      padding: 50px;
+    }
+  }
+
+  &__title {
+    transition: all 0.4s ease-in-out;
+    color: $white;
+    font-size: 28px;
+    line-height: 1.2;
+    font-family: $montserrat;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 12px;
+    max-height: 66px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__description {
+    color: $white;
+    font-size: 14px;
+    line-height: 1.6;
+    max-height: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+    transition: all 0.6s ease;
+  }
+
+  .btn-circleoverlay {
+    width: 50px;
+    height: 50px;
+    margin-top: 24px;
+    position: relative;
+  }
+}
+/* END HOVERBOX */

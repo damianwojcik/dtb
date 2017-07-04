@@ -1,0 +1,81 @@
+/* BEGIN FORMBOX */
+.formbox {
+  background-color: #f4f6f9;
+  padding: 50px 30px;
+
+  @include tablet-l-min {
+    padding: 60px 40px;
+  }
+
+  @include desktop-sm-min {
+    padding: 60px;
+  }
+
+  &__title,
+  .nf-form-title h3{
+    font-size: 30px;
+    line-height: 1.2;
+    font-family: $montserrat;
+    color: $black;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    @include tablet-sm-min {
+      font-size: 34px;
+    }
+
+    @include tablet-xl-min {
+      font-size: 40px;
+    }
+
+    @include desktop-sm-min {
+      font-size: 45px;
+    }
+  }
+
+  input:not([type="submit"]):not([type="button"]) {
+    width: 100%;
+    background-color: $white;
+    padding: 17px 23px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 25px;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 17px 23px;
+    min-height: 120px;
+    margin-bottom: 50px;
+    border: 0;
+    outline: 0;
+  }
+
+  @include tablet-sm-min {
+    input:not([type="submit"]):not([type="button"]) {
+      width: calc(50% - 15px);
+      float: left;
+    }
+
+    #nf-field-6-container input:not([type="submit"]):not([type="button"]) {
+      margin-left: 30px;
+    }
+  }
+}
+/* END FORMBOX */
+
+/* BEGIN NINJA-FORMS */
+.formbox label,
+.formbox .nf-form-fields-required,
+.nf-error-msg .nf-error-required-error,
+.nf-error-msg {
+  display: none;
+}
+
+.nf-fail.nf-error input:not([type="submit"]):not([type="button"]),
+.nf-fail.nf-error textarea {
+  border: 1px solid red;
+}
+/* END NINJA-FORMS */

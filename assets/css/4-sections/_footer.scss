@@ -1,0 +1,162 @@
+/* BEGIN FOOTER */
+.site-footer {
+  background-color: $black;
+  font-size: 14px;
+
+  a {
+    color: rgba(255,255,255,0.6);
+
+    &.btn {
+      color: $white;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .copy {
+    color: $white;
+    margin: 0;
+  }
+
+  .wrap {
+    display: table;
+    width: 100%;
+    position: relative;
+
+    @include desktop-l-min {
+      display: inline-block;
+      width: auto;
+      padding-left: 30px;
+    }
+
+    .col {
+      margin-bottom: 0;
+    }
+  }
+
+  .col {
+    display: block;
+    width: 100%;
+
+    @include desktop-l-min {
+      display: inline-block;
+      width: auto;
+
+      &:not(:first-child) {
+        padding-left: 30px;
+      }
+    }
+
+    &:first-child {
+      margin-bottom: 30px;
+      @include desktop-l-min {
+        margin-bottom: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 25px;
+      @include desktop-l-min {
+        margin-bottom: 0;
+      }
+    }
+
+    &.col-6 {
+      display: inline-block;
+      width: 50%;
+      margin-bottom: 0;
+
+      @include desktop-l-min {
+        width: auto;
+      }
+
+      &:last-child {
+        text-align: right;
+
+        @include desktop-l-min {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .btn-red:hover {
+    background-color: $white;
+    color: $red;
+  }
+
+  .container {
+    padding: 40px 20px;
+
+    @include phone-xl-min {
+      padding: 40px 75px;
+    }
+
+    @include tablet-s-min {
+      padding: 40px 50px;
+    }
+
+    @include tablet-m-min {
+      padding: 40px 60px;
+    }
+
+    @include tablet-xl-min {
+      padding: 40px 40px;
+    }
+
+    @include desktop-s-min {
+      padding: 40px 145px;
+    }
+
+    @include desktop-m-min {
+      padding: 45px 160px;
+    }
+
+    @include desktop-l-min {
+      margin: auto;
+      max-width: 1170px;
+      padding: 45px 0;
+    }
+  }
+
+  .footer-nav {
+    li {
+      display: inline-block;
+
+      a {
+        display: block;
+        padding: 0 14px;
+      }
+    }
+  }
+
+  .socials-footer {
+    li {
+      display: inline-block;
+
+      a {
+        padding: 5px 10px;
+
+        &:hover {
+          i {
+            color: $white;
+          }
+        }
+      }
+
+      i {
+        font-size: 18px;
+        color: rgba(255,255,255,0.6);
+      }
+    }
+  }
+}
+/* END FOOTER */

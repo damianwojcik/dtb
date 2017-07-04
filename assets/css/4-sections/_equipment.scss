@@ -1,0 +1,88 @@
+/* BEGIN SECTION--EQUIPMENT */
+.section--equipment {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .section__title {
+    margin-bottom: 30px;
+
+    @include tablet-xl-min {
+      margin-bottom: 50px;
+    }
+  }
+
+  .container {
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0 auto;
+    display: block;
+
+    @include phone-l-min {
+      max-width: 470px;
+    }
+
+    @include phone-xl-min {
+      max-width: 580px;
+    }
+
+    @include tablet-sm-min {
+      max-width: 740px;
+    }
+
+    @include tablet-l-min {
+      max-width: 930px;
+    }
+
+    @include tablet-xl-min {
+      max-width: 100%;
+      padding: 75px 40px;
+    }
+
+    @include desktop-s-min {
+      padding: 100px 145px;
+    }
+
+    @include desktop-m-min {
+      padding: 100px 160px;
+    }
+
+    @include desktop-l-min {
+      margin: auto;
+      max-width: 1170px;
+      padding: 125px 0;
+    }
+
+  }
+
+  .col {
+    display: table;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  @include tablet-xl-min {
+    .col-3 {
+      width: 33.33%;
+      float: left;
+
+      &:first-child {
+        padding-right: 15px;
+      }
+
+      &:nth-child(2) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      &:nth-child(3) {
+        padding-left: 15px;
+      }
+    }
+  }
+
+}
+/* END SECTION--EQUIPMENT */

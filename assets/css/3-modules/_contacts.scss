@@ -1,0 +1,73 @@
+/* BEGIN CONTACTS */
+.contacts {
+  margin-bottom: 20px;
+
+  @include tablet-l-min {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  @include desktop-ls-min {
+    margin-top: 15px;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: block;
+
+    &:last-child {
+      i {
+        position: relative;
+        top: -12px;
+      }
+
+      @include tablet-sm-min {
+        position: relative;
+        top: 12px;
+      }
+    }
+
+    .wrap {
+      display: inline-block;
+      padding-left: 4px;
+
+      a {
+        display: block;
+        padding: 0;
+      }
+    }
+
+    @include tablet-sm-min {
+      display: inline-block;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+
+      @include tablet-sm-min {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  i {
+    color: $red;
+    font-size: 18px;
+    line-height: 19px;
+    margin-right: 3px;
+  }
+
+  a {
+    padding: 10px;
+  }
+
+  a:hover i {
+    color: $text;
+  }
+}
+/* END CONTACTS */

@@ -1,0 +1,15 @@
+/* BEGIN SECTION--MAP */
+#map {
+  height: 275px;
+  width: 100%;
+  background-color: #ddd;
+
+  @include tablet-l-min {
+    height: 345px;
+  }
+
+  @include desktop-s-min {
+    height: 515px;
+  }
+}
+/* END SECTION--MAP */

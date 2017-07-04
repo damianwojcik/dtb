@@ -1,0 +1,18 @@
+a {
+  text-decoration: none;
+  outline: 0;
+  transition: all 0.4s ease-in-out;
+  color: $text;
+
+  &:hover, &:active, &:visited, &:focus {
+    text-decoration: none;
+  }
+}
+
+.fa {
+  transition: all 0.4s ease-in-out;
+}
+
+button {
+  transition: all 0.4s ease-in-out;
+}

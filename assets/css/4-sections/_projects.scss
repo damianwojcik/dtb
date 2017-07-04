@@ -1,0 +1,33 @@
+/* BEGIN SECTION--PROJECTS */
+.section--projects {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #ddd;
+
+  .section__subtitle {
+    color: $red;
+    margin-bottom: 15px;
+  }
+
+  .section__title {
+    margin-bottom: 45px;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .row-home {
+    height: 94px;
+
+    @include tablet-l-min {
+      height: 136px;
+    }
+
+    @include desktop-l-min {
+      height: 146px;
+    }
+  }
+}
+/* END SECTION--PROJECTS */

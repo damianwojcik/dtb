@@ -1,0 +1,28 @@
+/* BEGIN SITE-LOGO */
+.site-logo {
+  display: inline-block;
+  margin: 0;
+  font-size: 1px;
+  margin-bottom: 10px;
+
+  a {
+    display: block;
+  }
+
+  img {
+    max-height: 52px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  @include tablet-l-min {
+    float: left;
+    margin-bottom: 0;
+    margin-top: 45px;
+  }
+
+  @include desktop-sm-min {
+    margin-top: 20px;
+  }
+}
+/* END SITE-LOGO */

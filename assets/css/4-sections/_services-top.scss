@@ -1,0 +1,79 @@
+/* BEGIN SERVICES-TOP */
+.section--servicesTop {
+  background-color: #f4f6f9;
+  border-bottom: 1px solid #ddd;
+
+  .container {
+    padding: 0;
+    max-width: 330px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    display: block;
+
+    @include phone-l-min {
+      max-width: 470px;
+    }
+
+    @include phone-xl-min {
+      max-width: 580px;
+    }
+
+    @include tablet-sm-min {
+      max-width: 740px;
+    }
+
+    @include tablet-l-min {
+      max-width: 930px;
+    }
+
+    @include tablet-xl-min {
+      max-width: 100%;
+      padding: 75px 40px;
+    }
+
+    @include desktop-s-min {
+      padding: 100px 145px;
+    }
+
+    @include desktop-m-min {
+      padding: 100px 160px;
+    }
+
+    @include desktop-l-min {
+      margin: auto;
+      max-width: 1170px;
+      padding: 125px 0;
+    }
+
+  }
+
+  .wrap {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: $white;
+    margin-top: 40px;
+
+    @include tablet-l-min {
+      padding: 60px 30px 80px;
+    }
+
+    .section__subtitle {
+      color: $red;
+    }
+
+    .description {
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+  }
+
+  @include tablet-xl-min {
+    .col-6 {
+      display: block;
+      float: left;
+      width: 50%;
+    }
+  }
+}
+/* END SERVICES-TOP */

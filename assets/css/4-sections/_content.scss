@@ -1,0 +1,30 @@
+/* BEGIN MAIN CONTENT */
+main.content {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $montserrat;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  a {
+    color: $red;
+
+    &:hover {
+      color: lighten($red, 10%);
+    }
+  }
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 20px;
+  max-height: 400px;
+}
+/* END MAIN CONTENT */

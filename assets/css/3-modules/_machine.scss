@@ -1,0 +1,37 @@
+/* BEGIN MACHINE */
+.machine {
+  display: table;
+  width: 100%;
+  background-color: $white;
+  height: 30px;
+
+  &__header {
+    background-color: $black;
+    color: $white;
+    padding: 40px 30px 30px;
+    text-align: left;
+
+    h3 {
+      text-transform: uppercase;
+      font-family: $montserrat;
+      font-weight: 600;
+      font-size: 34px;
+      margin: 0;
+      line-height: 1.4;
+    }
+  }
+
+  &__wrap {
+    text-align: left;
+    background-color: $white;
+    color: $text;
+    padding: 40px 30px 30px;
+  }
+
+  &__imgwrap {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+}
+/* END MACHINE */

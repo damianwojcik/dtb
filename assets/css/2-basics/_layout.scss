@@ -1,0 +1,115 @@
+/* BEGIN LATOUT */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  display: table;
+  width: 100%;
+  padding: 50px 20px;
+
+  @include phone-xl-min {
+    padding: 50px 75px;
+  }
+
+  @include tablet-s-min {
+    padding: 50px;
+  }
+
+  @include tablet-m-min {
+    padding: 50px 60px;
+  }
+
+  @include tablet-xl-min {
+    padding: 75px 40px;
+  }
+
+  @include desktop-s-min {
+    padding: 100px 145px;
+  }
+
+  @include desktop-m-min {
+    padding: 100px 160px;
+  }
+
+  @include desktop-l-min {
+    margin: auto;
+    max-width: 1170px;
+    padding: 125px 0;
+  }
+
+  .row {
+    display: table;
+    width: 100%;
+    min-height: 30px;
+    position: relative;
+  }
+}
+
+.section {
+  width: 100%;
+  display: block;
+  position: relative;
+
+  &__title {
+    margin-top: 0;
+    font-size: 32px;
+    line-height: 1.2;
+    font-family: $montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $black;
+
+    @include phone-m-min {
+      font-size: 35px;
+    }
+
+    @include phone-l-min {
+      font-size: 42px;
+    }
+
+    @include tablet-l-min {
+      font-size: 45px;
+    }
+
+    @include desktop-s-min {
+      font-size: 47px;
+    }
+
+    @include desktop-l-min {
+      font-size: 55px;
+    }
+  }
+
+  &__subtitle {
+    font-family: $brush;
+    text-transform: uppercase;
+    color: $red;
+    font-size: 21px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+
+    @include tablet-m-min {
+      margin-bottom: 20px;
+    }
+
+    @include desktop-l-min {
+      font-size: 23px;
+    }
+  }
+
+  &__price {
+    font-family: $nunito;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: $aqua;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}
+/* END LATOUT */

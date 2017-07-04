@@ -1,0 +1,93 @@
+/* BEGIN TYPOGRAPHY */
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+
+small,
+.small {
+  font-size: 85%;
+}
+
+strong {
+	font-weight: 700;
+}
+
+p {
+	margin-bottom: 0;
+	line-height: 1.4;
+
+	br {
+		content: " ";
+		line-height: 32px;
+	}
+}
+
+.offscreen {
+	left: -1000em;
+	position: absolute;
+}
+/* BEGIN TYPOGRAPHY */

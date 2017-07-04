@@ -1,0 +1,112 @@
+/* BEGIN CONTACTBOX */
+.contactbox {
+  display: table;
+  margin: auto;
+  width: 100%;
+  background: $red; /* Old browsers */
+  background: -moz-linear-gradient(left, $red 0%, lighten($red, 10%) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, $red 0%, lighten($red, 10%) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, $red 0%, lighten($red, 10%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e31e25', endColorstr='#FD383F',GradientType=1 ); /* IE6-9 */
+
+  padding: 50px 30px;
+  margin-bottom: 40px;
+
+  @include tablet-l-min {
+    padding: 60px 40px;
+  }
+
+  @include desktop-sm-min {
+    padding: 60px;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    li {
+      display: table;
+      text-align: left;
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: $white;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: $montserrat;
+
+    @include tablet-sm-min {
+      font-size: 34px;
+    }
+
+    @include tablet-xl-min {
+      font-size: 40px;
+    }
+
+    @include desktop-sm-min {
+      font-size: 45px;
+    }
+  }
+
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+  [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-size: 30px;
+    color: $white;
+
+    @include phone-l-min {
+      font-size: 50px;
+    }
+  }
+
+  &__wrap,
+  &__iconwrap {
+    display: block;
+  }
+
+  &__iconwrap {
+    width: 40px;
+    float: left;
+  }
+
+  &__wrap {
+    padding-left: 40px;
+    width: 100%;
+    @include phone-l-min {
+      padding-left: 70px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+
+  &__data {
+    color: $white;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.6;
+    @include phone-l-min {
+      font-size: 14px;
+    }
+
+    @include tablet-l-min {
+      font-size: 15px;
+    }
+  }
+}
+/* END CONTACTBOX */
