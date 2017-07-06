@@ -3244,6 +3244,14 @@ body.loaded #preloader {
     transform: scale(1);
     -webkit-transform: scale(1); } }
 
+.b-lazy {
+  transition: opacity 500ms ease-in-out;
+  max-width: 100%;
+  opacity: 0; }
+
+.b-lazy.b-loaded {
+  opacity: 1; }
+
 body {
   background: #FFF;
   overflow-x: hidden;
@@ -3651,7 +3659,8 @@ p {
 .top-panel {
   border-bottom: 1px solid #ddd;
   text-align: center;
-  transition: all 0.4s ease-in-out; }
+  transition: all 0.4s ease-in-out;
+  z-index: 999; }
   @media (min-width: 960px) {
     .top-panel {
       text-align: right; } }
@@ -3660,7 +3669,7 @@ p {
     max-width: 100%; }
   .top-panel.fixed {
     position: fixed;
-    top: 0px;
+    top: 0;
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 9999;
     width: 100%; }

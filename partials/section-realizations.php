@@ -7,7 +7,7 @@
     );
 ?>
 
-<section class="section section--realizations animation-element" data-anim="slide_top" style="background-image: url('<?= THEME_URL ?>/assets/img/bg-projects.jpg');">
+<section class="section section--realizations animation-element b-lazy" data-anim="slide_top" data-src="<?= THEME_URL ?>/assets/img/bg-projects.jpg">
 
     <div class="container">
 

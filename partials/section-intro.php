@@ -16,7 +16,7 @@ if( have_rows('section_intro') ):
 
 ?>
 
-        <section class="section section--intro animation-element" data-anim="slide_top" style="background-image: url('<?= THEME_URL ?>/assets/img/intro-bg.png');">
+        <section class="section section--intro animation-element b-lazy" data-anim="slide_top" data-src="<?= THEME_URL ?>/assets/img/intro-bg.png">
 
             <div class="container">
 
@@ -52,7 +52,7 @@ if( have_rows('section_intro') ):
 
                     <?php if( ( !empty($photo) ) ): ?>
 
-                        <img class="img-intro" src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>"/>
+                        <img class="img-intro b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>" />
 
                     <?php endif; ?>
 

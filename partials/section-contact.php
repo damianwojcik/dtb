@@ -3,7 +3,7 @@
     $address = get_field('address', 'option');
 ?>
 
-<section class="section section--contact animation-element" data-anim="slide_top" style="background-image: url('<?= THEME_URL ?>/assets/img/intro-bg.png');">
+<section class="section section--contact animation-element b-lazy" data-anim="slide_top" data-src="<?= THEME_URL ?>/assets/img/intro-bg.png">
 
     <div class="container">
 

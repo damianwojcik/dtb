@@ -50,9 +50,9 @@
 
                 <div class="col col-6">
 
-                    <p class="copy">&copy; 2017 <a href="http://damianwojcik.it" target="_blank">damianwojcik.it</a></p>
+                    <p class="copy"></p>
 
-                </div><!-- /.col .col-6s -->
+                </div><!-- /.col .col-6 -->
 
             </div><!-- /.wrap -->
 

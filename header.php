@@ -48,7 +48,7 @@
             <h1 class="site-logo">
 
                 <a href="<?= SITE_URL; ?>">
-                    <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
+                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
                 </a>
 
             </h1><!-- /.site-logo-->
@@ -84,10 +84,12 @@
                     <?php if( !empty($email) ): ?>
 
                         <li>
+
                             <a href="mailto: <?php echo $email; ?>">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 <?php echo $email; ?>
                             </a>
+
                         </li>
 
                     <?php endif; ?>
@@ -95,6 +97,7 @@
                     <?php if( have_rows('phone_numbers', 'option') ): ?>
 
                         <li>
+
                             <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
 
                             <div class="wrap">
@@ -154,7 +157,7 @@
             <h1 class="site-logo">
 
                 <a href="<?= SITE_URL; ?>">
-                    <img src="<?php echo $logo_white['url']; ?>" alt="<?php echo $logo_white['alt']; ?>">
+                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $logo_white['url']; ?>" alt="<?php echo $logo_white['alt']; ?>">
                 </a>
 
             </h1><!-- /.site-logo-->
@@ -192,17 +195,6 @@
             <?php endif; ?>
 
             <?php dynamic_sidebar('search_panel'); ?>
-
-<!--            <form class="searchbox">-->
-<!---->
-<!--                <input type="search" placeholder="Wyszukaj..." name="search">-->
-<!---->
-<!--                <button type="submit" class="searchbox__submit">-->
-<!--                    <i class="fa fa-search" aria-hidden="true"></i>-->
-<!--                </button>-->
-<!---->
-<!--            </form>-->
-
 
         </div><!-- /.menu_mobile__inner-->
 

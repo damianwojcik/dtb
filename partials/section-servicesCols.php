@@ -20,7 +20,7 @@
 
             <div class="col col-3">
 
-                <a href="<?php the_permalink(); ?>" class="hoverbox" style="background-image: url('<?php echo $photo; ?>');">
+                <a href="<?php the_permalink(); ?>" class="hoverbox b-lazy" data-src="<?php echo $photo; ?>">
 
                     <div class="hoverbox__overlay">
 

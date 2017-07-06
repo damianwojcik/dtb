@@ -25,7 +25,7 @@
 
                     <?php if( !empty($thumbnail) && is_single() ): ?>
 
-                        <img src="<?php echo $thumbnail[0]; ?>" alt="<?php echo $title; ?>" class="full-width">
+                        <img class="full-width b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $thumbnail[0]; ?>" alt="<?php echo $title; ?>">
 
                     <?php endif; ?>
 
