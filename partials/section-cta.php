@@ -20,15 +20,15 @@
                     <div class="row">
 
                         <?php if( ( !empty($headline) ) ): ?>
-                            <h2 class="section__subtitle">
+                            <h3 class="section__subtitle">
                                 <?php echo $headline; ?>
-                            </h2>
+                            </h3>
                         <?php endif; ?>
 
                     <?php if( ( !empty($title) ) ): ?>
-                        <h1 class="section__title">
+                        <h2 class="section__title">
                             <?php echo $title; ?>
-                        </h1>
+                        </h2>
                     <?php endif; ?>
 
                     </div><!-- /.row -->
@@ -39,7 +39,7 @@
 
                 </div><!-- /.container -->
 
-            </section><!-- /.section section--projects -->
+            </section><!-- /.section section-/-projects -->
 
 <?php
 

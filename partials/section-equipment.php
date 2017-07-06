@@ -82,7 +82,7 @@ $section_title = get_sub_field('section_title');
 
         </div><!-- /.container -->
 
-    </section><!-- /.section section--equipment -->
+    </section><!-- /.section section-/-equipment -->
 
 <?php
 

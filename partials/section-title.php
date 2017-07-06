@@ -17,7 +17,7 @@
 
     <div class="wrap">
 
-        <h1 class="section__title">
+        <h2 class="section__title">
             <?php
                 if ( is_post_type_archive() ) {
                     post_type_archive_title();
@@ -29,10 +29,10 @@
                     the_title();
                 }
                 ?>
-        </h1>
+        </h2>
 
         <?php get_template_part("partials/module", "breadcrumbs"); ?>
 
     </div><!-- /.wrap -->
 
-</section><!-- /.section section--title -->
+</section><!-- /.section section-/-title -->

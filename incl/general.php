@@ -24,7 +24,7 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 function enqueue_styles() {
     // load styles
-    wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Nunito:300,600|Caveat+Brush|Montserrat&amp;subset=latin-ext', '', NULL);
+    wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Nunito:300,600%7CCaveat+Brush%7CMontserrat&amp;subset=latin-ext', '', NULL);
     wp_enqueue_style( 'site_styles', THEME_URL .'/style.css', '', NULL);
 }
 

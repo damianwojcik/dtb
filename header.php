@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 
     <!-- Basic Page Needs
@@ -41,14 +41,14 @@
 
 <div class="page-wrapper">
 
-    <header class="top-panel animation-element" role="banner" data-anim="slide_top">
+    <header class="top-panel animation-element" data-anim="slide_top">
 
         <div class="container">
 
             <h1 class="site-logo">
 
                 <a href="<?= SITE_URL; ?>">
-                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
+                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">Drukarnia Tanich Bannerów
                 </a>
 
             </h1><!-- /.site-logo-->
@@ -59,13 +59,13 @@
 
                 <button class="js-toggle-nav">
 
-                    <div class="hamburger">
+                    <span class="hamburger">
 
                         <span class="hamburger__bar"></span>
                         <span class="hamburger__bar"></span>
                         <span class="hamburger__bar"></span>
 
-                    </div>
+                    </span>
 
                     <span class="txt">Menu</span>
 
@@ -85,7 +85,7 @@
 
                         <li>
 
-                            <a href="mailto: <?php echo $email; ?>">
+                            <a href="mailto:<?php echo $email; ?>">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 <?php echo $email; ?>
                             </a>
@@ -102,9 +102,12 @@
 
                             <div class="wrap">
 
-                                <?php while( have_rows('phone_numbers', 'option') ): the_row(); ?>
+                                <?php while( have_rows('phone_numbers', 'option') ): the_row();
+                                    $phone_number = get_sub_field('phone_number');
+                                    $number_nospaces = str_replace(' ', '', $phone_number);
+                                    ?>
 
-                                    <a href="tel: <?php the_sub_field('phone_number'); ?>"><?php the_sub_field('phone_number'); ?></a>
+                                    <a href="tel:<?php echo $number_nospaces; ?>"><?php the_sub_field('phone_number'); ?></a>
 
                                 <?php endwhile; ?>
 
@@ -157,7 +160,7 @@
             <h1 class="site-logo">
 
                 <a href="<?= SITE_URL; ?>">
-                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $logo_white['url']; ?>" alt="<?php echo $logo_white['alt']; ?>">
+                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $logo_white['url']; ?>" alt="<?php echo $logo_white['alt']; ?>">Drukarnia Tanich Bannerów
                 </a>
 
             </h1><!-- /.site-logo-->

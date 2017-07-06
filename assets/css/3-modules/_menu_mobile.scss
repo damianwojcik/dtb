@@ -178,6 +178,10 @@
     outline: none;
   }
 
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  }
+
   &__submit {
     color: $white;
     position: absolute;

@@ -9,6 +9,8 @@
 
 <section class="section section--realizations animation-element b-lazy" data-anim="slide_top" data-src="<?= THEME_URL ?>/assets/img/bg-projects.jpg">
 
+    <h2 class="offscreen">Realizacje</h2>
+
     <div class="container">
 
         <div class="row">
@@ -73,4 +75,4 @@
 
     </div><!-- /.container -->
 
-</section><!-- /.section section--realizations -->
+</section><!-- /.section section-/-realizations -->

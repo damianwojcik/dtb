@@ -74,15 +74,15 @@ if( empty($button_url) ){ $button_url = '#'; }
                     <div class="wrap">
 
                         <?php if( ( !empty($headline) ) ): ?>
-                            <h2 class="section__subtitle">
+                            <h3 class="section__subtitle">
                                 <?php echo $headline; ?>
-                            </h2>
+                            </h3>
                         <?php endif; ?>
 
                         <?php if( ( !empty($scetion_title) ) ): ?>
-                            <h1 class="section__title">
+                            <h2 class="section__title">
                                 <?php echo $scetion_title; ?>
-                            </h1>
+                            </h2>
                         <?php endif; ?>
 
                         <?php if( ( !empty($description) ) ): ?>
@@ -103,7 +103,7 @@ if( empty($button_url) ){ $button_url = '#'; }
 
         </div><!-- /.container -->
 
-    </section><!-- /.section section--servicesTop -->
+    </section><!-- /.section section-/-servicesTop -->
 
 <?php
 

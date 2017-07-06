@@ -4,6 +4,8 @@
 
     <section class="section section--servicesCols animation-element" data-anim="slide_top">
 
+        <h2 class="offscreen">Usługi</h2>
+
 
     <?php while ( have_posts() ) : the_post();
 
@@ -52,6 +54,6 @@
         ?>
 
 
-</section><!-- /.section section--servicesCols -->
+</section><!-- /.section section-/-servicesCols -->
 
 <?php endif; ?>

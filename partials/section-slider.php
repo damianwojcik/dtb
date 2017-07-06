@@ -11,7 +11,7 @@
 
 <section class="section section--slider animation-element" data-anim="slide_top">
 
-    <h1 class="offscreen">Slider</h1>
+    <h2 class="offscreen">Slider</h2>
 
     <div class="owl-carousel">
 
@@ -61,4 +61,4 @@
 
     </div><!-- /.owl-carousel -->
 
-</section><!-- /.section section--slider-->
+</section><!-- /.section section-/-slider-->

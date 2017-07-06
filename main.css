@@ -3186,7 +3186,7 @@ body.lb-disable-scrolling {
   height: 100%;
   width: 100%;
   background: #FFF;
-  z-index: 999;
+  z-index: 9999;
   transition: all .5s ease; }
 
 body.loaded #preloader {
@@ -3375,7 +3375,8 @@ button {
   font-size: 1px;
   margin-bottom: 10px; }
   .site-logo a {
-    display: block; }
+    display: block;
+    font-size: 0; }
   .site-logo img {
     max-height: 52px;
     display: inline-block;
@@ -4034,6 +4035,8 @@ p {
     width: 100%;
     padding: 10px 40px 10px 20px;
     outline: none; }
+  .searchbox input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important; }
   .searchbox__submit {
     color: #FFF;
     position: absolute;
@@ -5219,6 +5222,9 @@ main.content a {
   color: #e31e25; }
   main.content a:hover {
     color: #e94b51; }
+
+.file_td_clean {
+  display: inline-block; }
 
 .full-width {
   width: 100%;
