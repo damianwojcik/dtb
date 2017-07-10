@@ -71,7 +71,6 @@ jQuery(document).ready(function () {
     scroll_based_animations();
     loader();
     lazy_load();
-    copy_fill();
 
     $wind.on('scroll',function(){
 
@@ -96,13 +95,6 @@ jQuery(document).ready(function () {
         'wrapAround': true,
         'fadeDuration': 300
     });
-
-    function copy_fill() {
-        var html = '&copy; 2017 <a href="http://damianwojcik.it" target="_blank">damianwojcik.it</a>',
-            copy = jQuery('.copy');
-
-        copy.html(html);
-    }
 
     function scroll_based_animations() {
 
@@ -196,7 +188,7 @@ jQuery(document).ready(function () {
         }
 
         btn.on('click', function() {
-            body.stop(true, false).animate({
+            jQuery('html, body').stop(true, false).animate({
                 scrollTop: 0
             }, 500);
         });

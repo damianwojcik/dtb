@@ -49,6 +49,7 @@
       display: inline-block;
       width: calc(50% - 10px);
       margin-bottom: 20px;
+      float: left;
 
       &:nth-last-child(-n+2) {
         margin-bottom: 0;

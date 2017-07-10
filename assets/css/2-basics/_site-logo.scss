@@ -14,6 +14,14 @@
     max-height: 52px;
     display: inline-block;
     vertical-align: top;
+
+    @include tablet-xl-min {
+      max-height: 60px;
+    }
+
+    @include desktop-lm-min {
+      max-height: 65px;
+    }
   }
 
   @include tablet-l-min {
@@ -22,7 +30,19 @@
     margin-top: 45px;
   }
 
+  @include tablet-xl-min {
+    margin-top: 55px;
+  }
+
   @include desktop-sm-min {
+    margin-top: 35px;
+  }
+
+  @include desktop-lm-min {
+    margin-top: 35px;
+  }
+
+  @include desktop-ls-min {
     margin-top: 20px;
   }
 }
