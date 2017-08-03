@@ -15,7 +15,6 @@
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url(https://fonts.googleapis.com/css?family=Nunito:300,600|Caveat+Brush|Montserrat&amp;subset=latin-ext);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -383,6 +382,20 @@ textarea {
 img {
   max-width: 100%;
   height: auto; }
+
+@font-face {
+  font-family: 'swzcondn';
+  src: url("assets/fonts/swzcondn-webfont.eot");
+  src: url("assets/fonts/swzcondn-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/swzcondn-webfont.woff2") format("woff2"), url("assets/fonts/swzcondn-webfont.woff") format("woff"), url("assets/fonts/swzcondn-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'swzconbn';
+  src: url("assets/fonts/swzconbn-webfont.eot");
+  src: url("assets/fonts/swzconbn-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/swzconbn-webfont.woff2") format("woff2"), url("assets/fonts/swzconbn-webfont.woff") format("woff"), url("assets/fonts/swzconbn-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 /* BEGIN COLORS */
 /* END COLORS */
@@ -2985,26 +2998,17 @@ Creation date: 22/06/2017 13:34
   font-style: normal;
   line-height: 1; }
 
-.flaticon-envelope:before {
+.flaticon-mesh:before {
   content: "\f100"; }
 
-.flaticon-smartphone:before {
+.flaticon-baner:before {
   content: "\f101"; }
 
-.flaticon-placeholder:before {
+.flaticon-writing:before {
   content: "\f102"; }
 
-.flaticon-writing:before {
-  content: "\f103"; }
-
-.flaticon-lineal-ribbons:before {
-  content: "\f104"; }
-
-.flaticon-mesh:before {
-  content: "\f105"; }
-
 .flaticon-road-banner:before {
-  content: "\f106"; }
+  content: "\f103"; }
 
 /* Preload images */
 body:after {
@@ -3256,12 +3260,12 @@ body {
   background: #FFF;
   overflow-x: hidden;
   position: relative;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
+  font-family: "swzcondn", sans-serif;
+  font-weight: 300;
   color: #23242c;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.7; }
 
 a {
@@ -3323,7 +3327,7 @@ button {
     margin-top: 0;
     font-size: 32px;
     line-height: 1.2;
-    font-family: "Montserrat", sans-serif;
+    font-family: "swzconbn", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     color: #000; }
@@ -3343,7 +3347,7 @@ button {
       .section__title {
         font-size: 55px; } }
   .section__subtitle {
-    font-family: "Caveat Brush", cursive;
+    font-family: "swzconbn", sans-serif;
     text-transform: uppercase;
     color: #e31e25;
     font-size: 21px;
@@ -3358,10 +3362,10 @@ button {
       .section__subtitle {
         font-size: 23px; } }
   .section__price {
-    font-family: "Nunito", sans-serif;
+    font-family: "swzcondn", sans-serif;
     font-weight: 100;
     text-transform: uppercase;
-    color: #47d6e8;
+    color: #000;
     font-size: 32px;
     line-height: 1.2;
     margin-top: 0;
@@ -3398,12 +3402,9 @@ button {
   @media (min-width: 1400px) {
     .site-logo {
       margin-top: 35px; } }
-  @media (min-width: 1500px) {
+  @media (min-width: 1440px) {
     .site-logo {
-      margin-top: 35px; } }
-  @media (min-width: 1550px) {
-    .site-logo {
-      margin-top: 20px; } }
+      margin-top: 15px; } }
 
 /* END SITE-LOGO */
 /* BEGIN TYPOGRAPHY */
@@ -3475,7 +3476,7 @@ small,
   font-size: 85%; }
 
 strong {
-  font-weight: 800; }
+  font-weight: 700; }
 
 p {
   margin-bottom: 0;
@@ -3499,7 +3500,7 @@ p {
   line-height: 1;
   font-weight: 600;
   color: #FFF;
-  font-family: "Montserrat", sans-serif;
+  font-family: "swzconbn", sans-serif;
   text-transform: uppercase;
   background-color: #000;
   border-radius: 40px;
@@ -3531,6 +3532,13 @@ p {
   background-color: #000; }
   .btn-black:hover {
     background-color: #e31e25; }
+
+.btn-white {
+  background-color: #FFF;
+  color: #000; }
+  .btn-white:hover {
+    background-color: #000;
+    color: #FFF; }
 
 .btn-circle {
   border-radius: 50%;
@@ -3604,7 +3612,7 @@ p {
     width: 54px;
     height: 54px; }
     .btn-circleoverlay:hover .fa {
-      color: #e947a5; }
+      color: #e31e25; }
   .btn-circleoverlay:after {
     display: none; }
 
@@ -3676,7 +3684,9 @@ p {
   border-bottom: 1px solid #ddd;
   text-align: center;
   transition: all 0.4s ease-in-out;
-  z-index: 999; }
+  z-index: 999;
+  font-family: "swzcondn", sans-serif;
+  text-transform: uppercase; }
   @media (min-width: 960px) {
     .top-panel {
       text-align: right; } }
@@ -3884,13 +3894,13 @@ p {
     .socials li:not(:first-child) {
       margin-left: 5px; }
     .socials li:first-child .socials__item {
-      background-color: #47d6e8; }
+      background-color: #6d84b4; }
       .socials li:first-child .socials__item:hover {
-        background-color: #19b6c9; }
+        background-color: #485e8c; }
     .socials li:nth-child(2) .socials__item {
-      background-color: #fcd63c; }
+      background-color: #d6d6d6; }
       .socials li:nth-child(2) .socials__item:hover {
-        background-color: #e8bb04; }
+        background-color: #b0b0b0; }
   .socials__item {
     display: block;
     width: 35px;
@@ -3922,7 +3932,9 @@ p {
   top: 0;
   transition: height 0.3s ease-out;
   font-size: 20px;
-  line-height: 30px; }
+  line-height: 30px;
+  font-family: "swzcondn", sans-serif;
+  text-transform: uppercase; }
   .menu_mobile a {
     color: #FFF; }
   .menu_mobile__inner {
@@ -4151,7 +4163,7 @@ p {
       text-overflow: ellipsis;
       margin: 0 auto;
       font-size: 12px;
-      font-family: "Montserrat", sans-serif;
+      font-family: "swzconbn", sans-serif;
       text-transform: uppercase;
       line-height: 1.4;
       font-weight: 600;
@@ -4173,7 +4185,7 @@ p {
     text-align: left; }
     .machine__header h3 {
       text-transform: uppercase;
-      font-family: "Montserrat", sans-serif;
+      font-family: "swzconbn", sans-serif;
       font-weight: 600;
       font-size: 34px;
       margin: 0;
@@ -4206,7 +4218,7 @@ p {
     .gallery-filters__item.active .gallery-filters__text {
       color: #e947a5; }
     .gallery-filters__item.active .dot {
-      background-color: #e947a5; }
+      background-color: #e31e25; }
   .gallery-filters__text {
     font-size: 10px;
     line-height: 1;
@@ -4240,7 +4252,7 @@ p {
       display: inline-block;
       margin-right: 5px; }
     .gallery-filters__button:hover {
-      color: #e947a5; }
+      color: #e31e25; }
 
 /* END GALLERY-FILTERS */
 /* BEGIN GALLERY */
@@ -4273,13 +4285,13 @@ p {
           max-height: 220px;
           width: auto; } }
   .gallery .overlay {
-    background: linear-gradient(to right, #e947a5 0%, rgba(233, 71, 165, 0.1) 100%);
+    background: linear-gradient(to right, #e31e25 0%, rgba(233, 71, 165, 0.1) 100%);
     opacity: 0;
     -webkit-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     transition: all 0.4s ease-in-out;
@@ -4294,7 +4306,7 @@ p {
       color: #FFF;
       font-size: 22px;
       font-weight: 600;
-      font-family: "Montserrat", sans-serif;
+      font-family: "swzconbn", sans-serif;
       line-height: 1.4; }
     .gallery .overlay .btn {
       position: absolute;
@@ -4308,7 +4320,8 @@ p {
 /* END GALLERY */
 /* BEGIN BREADCRUMBS */
 .breadcrumbs {
-  font-size: 13px; }
+  font-size: 13px;
+  text-transform: uppercase; }
   .breadcrumbs a {
     color: #FFF;
     margin: 0 5px; }
@@ -4354,7 +4367,7 @@ p {
     line-height: 1.2;
     text-transform: uppercase;
     font-weight: 600;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "swzconbn", sans-serif; }
     @media (min-width: 768px) {
       .contactbox__title {
         font-size: 34px; } }
@@ -4385,7 +4398,7 @@ p {
         padding-left: 70px; } }
   .contactbox__subtitle {
     margin-top: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "swzconbn", sans-serif;
     text-transform: uppercase;
     color: #000;
     margin-bottom: 5px;
@@ -4417,7 +4430,7 @@ p {
   .formbox .nf-form-title h3 {
     font-size: 30px;
     line-height: 1.2;
-    font-family: "Montserrat", sans-serif;
+    font-family: "swzconbn", sans-serif;
     color: #000;
     font-weight: 600;
     text-transform: uppercase;
@@ -4536,7 +4549,7 @@ p {
     color: #FFF;
     font-size: 28px;
     line-height: 1.2;
-    font-family: "Montserrat", sans-serif;
+    font-family: "swzconbn", sans-serif;
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 12px;
@@ -4561,10 +4574,10 @@ p {
 /* END HOVERBOX */
 /* BEGIN SECTION--SLIDER */
 .section--slider .sub-title {
-  color: #fcd63c;
+  color: #FFF;
   font-size: 17px;
   line-height: 1.4;
-  font-family: "Caveat Brush", cursive;
+  font-family: "swzconbn", sans-serif;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 20px;
@@ -4595,26 +4608,26 @@ p {
 
 .section--slider .title {
   color: #FFF;
-  font-family: "Montserrat", sans-serif;
+  font-family: "swzconbn", sans-serif;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.17;
   margin-top: 0;
-  margin-bottom: 35px; }
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
   @media (min-width: 360px) {
     .section--slider .title {
       font-size: 47px; } }
   @media (min-width: 400px) {
     .section--slider .title {
-      font-size: 53px;
-      margin-bottom: 45px; } }
+      font-size: 53px; } }
   @media (min-width: 480px) {
     .section--slider .title {
       font-size: 47px; } }
   @media (min-width: 600px) {
     .section--slider .title {
-      font-size: 64px;
-      margin-bottom: 35px; } }
+      font-size: 64px; } }
   @media (min-width: 720px) {
     .section--slider .title {
       font-size: 77px;
@@ -4631,7 +4644,9 @@ p {
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 60px;
-  display: block; }
+  display: block;
+  margin-top: 0;
+  text-transform: uppercase; }
   @media (min-width: 360px) {
     .section--slider .description {
       font-size: 18px; } }
@@ -4695,7 +4710,7 @@ p {
       position: absolute;
       left: 0;
       top: 0;
-      background-color: rgba(53, 45, 137, 0.7);
+      background-color: rgba(177, 30, 37, 0.7);
       z-index: 9; }
     .owl-carousel .item .wrap {
       z-index: 99;
@@ -4742,7 +4757,7 @@ p {
     .owl-carousel .owl-dot:nth-child(2) {
       margin: 17px 0; }
     .owl-carousel .owl-dot.active {
-      background-color: #fcd63c;
+      background-color: #FFF;
       width: 41px;
       margin-left: -20px; }
 
@@ -4763,7 +4778,7 @@ p {
         .section--intro .col-6:first-child {
           margin-bottom: 0; } }
   .section--intro .description {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.65;
     margin-bottom: 35px; }
     @media (min-width: 840px) {
@@ -4847,7 +4862,7 @@ p {
     .section--servicesTop .wrap .section__subtitle {
       color: #e31e25; }
     .section--servicesTop .wrap .description {
-      font-size: 15px;
+      font-size: 14px;
       line-height: 1.7;
       margin-bottom: 40px; }
   @media (min-width: 1024px) {
@@ -4874,11 +4889,10 @@ p {
 /* END SERVICES-COLS */
 /* BEGIN SECTION--EQUIPMENT */
 .section--equipment {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-color: #47d6e8; }
   .section--equipment .section__title {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: #FFF; }
     @media (min-width: 1024px) {
       .section--equipment .section__title {
         margin-bottom: 50px; } }
@@ -4957,17 +4971,17 @@ p {
 /* END SECTION--PROJECTS */
 /* BEGIN SECTION--PROMO */
 .section--promo {
-  background: #352d89;
+  background: #FF5158;
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #352d89 1%, #271f71 100%);
+  background: radial-gradient(ellipse at center, #FF5158 1%, #e31e25 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#352d89', endColorstr='#271f71',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
   text-align: center; }
   .section--promo .section__subtitle {
-    color: #47d6e8; }
+    color: #000; }
   .section--promo .section__title {
     color: #FFF; }
 
@@ -4988,7 +5002,8 @@ p {
 /* BEGIN FOOTER */
 .site-footer {
   background-color: #000;
-  font-size: 14px; }
+  font-size: 14px;
+  text-transform: uppercase; }
   .site-footer a {
     color: rgba(255, 255, 255, 0.6); }
     .site-footer a.btn {
@@ -5010,7 +5025,8 @@ p {
       .site-footer .wrap {
         display: inline-block;
         width: auto;
-        padding-left: 30px; } }
+        padding-left: 30px;
+        vertical-align: middle; } }
     .site-footer .wrap .col {
       margin-bottom: 0; }
   .site-footer .col {
@@ -5102,7 +5118,7 @@ p {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(53, 45, 137, 0.7);
+    background-color: rgba(177, 30, 37, 0.7);
     z-index: 9; }
   .section--title .wrap {
     z-index: 99;
@@ -5225,14 +5241,14 @@ p {
 /* END SECTION--REALIZATIONS */
 /* BEGIN MAIN CONTENT */
 main.content h1, main.content h2, main.content h3, main.content h4, main.content h5, main.content h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "swzconbn", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   font-weight: 600; }
 
 main.content p {
   margin: 0 0 10px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.65; }
 
 main.content a {

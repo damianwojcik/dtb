@@ -44,7 +44,7 @@
                         <?php endif; ?>
 
                         <?php if( !empty($button_title) ){ ?>
-                        <a class="btn btn-slider btn-orange" href="<?php echo $button_url; ?>">
+                        <a class="btn btn-slider btn-white" href="<?php echo $button_url; ?>">
                             <?php echo $button_title; ?>
                         </a>
                         <?php } ?>

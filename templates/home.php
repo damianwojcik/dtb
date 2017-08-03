@@ -8,7 +8,7 @@
 
     <?php get_template_part("partials/section", "servicesTop"); ?>
 
-    <?php get_template_part("partials/section", "equipment"); ?>
+    <?php // get_template_part("partials/section", "equipment"); ?>
 
     <?php get_template_part("partials/section", "cta"); ?>
 

@@ -2,6 +2,7 @@
 .site-footer {
   background-color: $black;
   font-size: 14px;
+  text-transform: uppercase;
 
   a {
     color: rgba(255,255,255,0.6);
@@ -35,6 +36,7 @@
       display: inline-block;
       width: auto;
       padding-left: 30px;
+      vertical-align: middle;
     }
 
     .col {

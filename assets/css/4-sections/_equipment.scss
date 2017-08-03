@@ -1,11 +1,10 @@
 /* BEGIN SECTION--EQUIPMENT */
 .section--equipment {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: $aqua;
 
   .section__title {
     margin-bottom: 30px;
+    color: $white;
 
     @include tablet-xl-min {
       margin-bottom: 50px;

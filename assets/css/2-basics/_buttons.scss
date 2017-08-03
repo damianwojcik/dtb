@@ -8,7 +8,7 @@
   line-height: 1;
   font-weight: 600;
   color: $white;
-  font-family: $montserrat;
+  font-family: $swzconbn;
   text-transform: uppercase;
   background-color: $black;
   border-radius: 40px;
@@ -53,6 +53,16 @@
 
   &:hover {
     background-color: $red;
+  }
+}
+
+.btn-white {
+  background-color: $white;
+  color: $black;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
   }
 }
 
@@ -139,7 +149,7 @@
     height: 54px;
 
     .fa {
-      color: $pink;
+      color: $red;
     }
   }
 

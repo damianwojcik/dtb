@@ -282,17 +282,26 @@ jQuery(document).ready(function () {
     }
 
     function owl_init(){
-        jQuery('.owl-carousel').owlCarousel({
+
+        var owl = jQuery('.owl-carousel');
+
+        owl.owlCarousel({
 
             items: 1,
             loop: true,
-            autoplay: false,
-            autoplayTimeout: 4000,
+            autoplay: true,
+            autoplayTimeout: 3000,
             autoplayHoverPause: true,
             nav: false,
-            dots: true,
-            transitionStyle : "fade"
+            dots: true
 
+        });
+
+        jQuery('.owl-carousel').on('mouseenter',function(){
+            owl.trigger('stop.owl.autoplay');
+        });
+        jQuery('.owl-carousel').on('mouseleave',function(){
+            owl.trigger('play.owl.autoplay',[1000]);
         });
     }
 

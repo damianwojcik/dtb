@@ -20,11 +20,21 @@
                         <?php if( !empty($address) ): ?>
 
                             <li>
+                                <strong>PPHU Anna Nowacka-Wrzesień</strong> <br>
+                                <span class="contactbox__data">
+                                    ul. 1-Maja 55 <br>
+                                    88-230 Piotrków Kujawski <br>
+                                    POLSKA <br>
+                                    PL 8890003780
+                                </span>
+                            </li>
+
+                            <li>
                                 <div class="contactbox__iconwrap">
                                     <i class="flaticon flaticon-placeholder"></i>
                                 </div>
                                 <div class="contactbox__wrap">
-                                    <h3 class="contactbox__subtitle">Nasze biuro</h3>
+                                    <h3 class="contactbox__subtitle">Drukarnia</h3>
                                     <span class="contactbox__data"><?php echo $address; ?></span>
                                 </div>
                             </li>
@@ -38,7 +48,7 @@
                                     <i class="flaticon flaticon-smartphone"></i>
                                 </div>
                                 <div class="contactbox__wrap">
-                                    <h3 class="contactbox__subtitle">Telefon</h3>
+                                    <h3 class="contactbox__subtitle">Dział sprzedaży - zamówień</h3>
                                     <span class="contactbox__data">
                                         <?php while( have_rows('phone_numbers', 'option') ): the_row(); ?>
                                             <?php the_sub_field('phone_number'); ?><br/>

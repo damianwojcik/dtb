@@ -1,6 +1,31 @@
-//@import url(https://fonts.googleapis.com/css?family=Caveat+Brush&amp;subset=latin-ext);
-@import url(https://fonts.googleapis.com/css?family=Nunito:300,600|Caveat+Brush|Montserrat&amp;subset=latin-ext);
+//@import url(https://fonts.googleapis.com/css?family=Nunito:300,600|Caveat+Brush|Montserrat&amp;subset=latin-ext);
 
-$brush: 'Caveat Brush', cursive;
+//$brush: 'Caveat Brush', cursive;
 $montserrat: 'Montserrat', sans-serif;
 $nunito: 'Nunito', sans-serif;
+$swzcondn: 'swzcondn', sans-serif;
+$swzconbn: 'swzconbn', sans-serif;
+
+@font-face {
+  font-family: 'swzcondn';
+  src: url('assets/fonts/swzcondn-webfont.eot');
+  src: url('assets/fonts/swzcondn-webfont.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/swzcondn-webfont.woff2') format('woff2'),
+  url('assets/fonts/swzcondn-webfont.woff') format('woff'),
+  url('assets/fonts/swzcondn-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'swzconbn';
+  src: url('assets/fonts/swzconbn-webfont.eot');
+  src: url('assets/fonts/swzconbn-webfont.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/swzconbn-webfont.woff2') format('woff2'),
+  url('assets/fonts/swzconbn-webfont.woff') format('woff'),
+  url('assets/fonts/swzconbn-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}

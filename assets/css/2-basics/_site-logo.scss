@@ -38,12 +38,8 @@
     margin-top: 35px;
   }
 
-  @include desktop-lm-min {
-    margin-top: 35px;
-  }
-
-  @include desktop-ls-min {
-    margin-top: 20px;
+  @include desktop-m-min {
+    margin-top: 15px;
   }
 }
 /* END SITE-LOGO */

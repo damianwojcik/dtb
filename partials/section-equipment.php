@@ -10,7 +10,7 @@ $section_title = get_sub_field('section_title');
 
 ?>
 
-    <section class="section section--equipment animation-element b-lazy" data-anim="slide_top" data-src="<?= THEME_URL ?>/assets/img/bg-equipment.jpg">
+    <section class="section section--equipment animation-element" data-anim="slide_top">
 
         <div class="container">
 
