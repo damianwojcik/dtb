@@ -45,7 +45,7 @@
 
                             <li>
                                 <div class="contactbox__iconwrap">
-                                    <i class="flaticon flaticon-smartphone"></i>
+                                    <i class="flaticon flaticon-smartphone-iphone"></i>
                                 </div>
                                 <div class="contactbox__wrap">
                                     <h3 class="contactbox__subtitle">Dział sprzedaży - zamówień</h3>
