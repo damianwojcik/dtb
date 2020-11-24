@@ -50,7 +50,7 @@
 
                 <div class="col col-6">
 
-                    <p class="copy">&copy; 2017 <a href="http://webcanvas.pl/" target="_blank">webcanvas.pl</a></p>
+                    <p class="copy">&copy; 2017 <a href="http://dwojcik.dev/" target="_blank" rel="noopener noreferrer">dwojcik.dev</a></p>
 
                 </div><!-- /.col .col-6 -->
 
